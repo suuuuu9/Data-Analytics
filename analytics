@@ -16,6 +16,7 @@ total = 0
 count = 0
 maxvalue = None
 minvalue = None
+values = []
 for line in sys.stdin:
     line = line.rstrip()
     num = tonum(line)
@@ -23,14 +24,15 @@ for line in sys.stdin:
     count += 1
     if maxvalue is None or maxvalue < num:
         maxvalue = num
-    if minvalue is None or maxvalue > num:
+    if minvalue is None or minvalue > num:
         minvalue = num
+    values.append(num)
 
 
 avg = total / count
 sum_sq = 0
-for line in sys.stdin:
-    sum_sq += (line - avg) ** 2
+for x in values:
+    sum_sq += (x - avg) ** 2
 
 
 var = sum_sq / count
