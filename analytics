@@ -1,0 +1,44 @@
+#!/usr/bin/python3
+# SPDX-FileCopyrightText: 2024 Suzuha Kiuchi
+# SPDX-License-Identifier: BSD-3-Clause
+import sys
+import math
+
+
+def tonum(s):
+    try:
+        return int(s)
+    except:
+        return float(s)
+
+
+total = 0
+count = 0
+maxvalue = None
+minvalue = None
+for line in sys.stdin:
+    line = line.rstrip()
+    num = tonum(line)
+    total += num
+    count += 1
+    if maxvalue is None or maxvalue < num:
+        maxvalue = num
+    if minvalue is None or maxvalue > num:
+        minvalue = num
+
+
+avg = total / count
+sum_sq = 0
+for line in sys.stdin:
+    sum_sq += (line - avg) ** 2
+
+
+var = sum_sq / count
+std = math.sqrt(var)
+
+
+print("平均値", avg)
+print("最大値", maxvalue)
+print("最小値", minvalue)
+print("分散", var)
+print("標準偏差", std)
