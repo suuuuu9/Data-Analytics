@@ -39,8 +39,8 @@ var = sum_sq / count
 std = math.sqrt(var)
 
 
-print("平均値", avg)
+print("平均値", '{:.2f}'.format(avg))
 print("最大値", maxvalue)
 print("最小値", minvalue)
-print("分散", var)
-print("標準偏差", std)
+print("分散", '{:.2f}'.format(var))
+print("標準偏差", '{:.2f}'.format(std))
