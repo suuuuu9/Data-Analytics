@@ -19,12 +19,8 @@ $ https://github.com/suuuuu9/Data-Analytics.git
 $ cd Data-Analytics
 ```
 ### 例
-以下のように入力します。
-```
-seq 5 | ./analytics
-```
-以下のように出力をターミナルに表示します。
-```
+```bash
+$ seq 5 | ./analytics
 平均値 3.00
 最大値 5
 最小値 1
