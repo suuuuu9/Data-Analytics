@@ -18,7 +18,7 @@ https://github.com/suuuuu9/Data-Analytics.git
 ディレクトリに移動
 cd Data-Analytics
 ```
-**例**
+### 例
 以下のように入力します。
 ```
 seq 5 | ./analytics
