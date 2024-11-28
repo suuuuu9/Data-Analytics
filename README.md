@@ -7,16 +7,16 @@
 
 ## インストール方法
 以下の手順でプロジェクトをローカル環境にインストールしてください。
-```bash
+```
 # リポジトリをクローン
 $ https://github.com/suuuuu9/Data-Analytics.git
 ```
 
 ## 使い方
 標準入力から数値を入力します。
-```
-ディレクトリに移動
-cd Data-Analytics
+```bash
+# ディレクトリに移動
+$ cd Data-Analytics
 ```
 ### 例
 以下のように入力します。
