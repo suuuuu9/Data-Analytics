@@ -9,7 +9,7 @@
 以下の手順でプロジェクトをローカル環境にインストールしてください。
 ```
 リポジトリをクローン
-https://github.com/suuuuu9/Data-Analytics.git
+$ https://github.com/suuuuu9/Data-Analytics.git
 ```
 
 ## 使い方
