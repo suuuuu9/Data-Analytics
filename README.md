@@ -12,12 +12,14 @@
 $ git clone https://github.com/suuuuu9/Data-Analytics.git
 ```
 
-## 使い方
-標準入力で数値を入力し```./analytics```を実行します。
+クローン後ディレクトリに移動できます。
 ```bash
-# ディレクトリに移動
 $ cd Data-Analytics
 ```
+
+## 使い方
+標準入力で数値を入力し```./analytics```を実行します。
+
 ### 例
 ```bash
 $ seq 5 | ./analytics
