@@ -19,7 +19,7 @@ $ https://github.com/suuuuu9/Data-Analytics.git
 $ cd Data-Analytics
 ```
 ### 例
-```python
+```bash
 $ seq 5 | ./analytics
 平均値 3.00
 最大値 5
