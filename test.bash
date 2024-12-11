@@ -28,10 +28,10 @@ out=$(seq 5 | ./analytics avg)
 [ "${out}" = "3.00" ] || ng "$LINENO"
 #最大値と最小値
 out=$(seq 5 | ./analytics 最大値 min)
-[ "${out}" = "3.00" ] || ng "$LINENO"
+[ "${out}" = "5 1" ] || ng "$LINENO"
 #分散と標準偏差
 out=$(seq 5 | ./analytics 分散 std)
-[ "${out}" = "3.00" ] || ng "$LINENO"
+[ "${out}" = "2.00 1.41" ] || ng "$LINENO"
 
 ### 変な入力 ###
 out=$(echo あ| ./analytics)
