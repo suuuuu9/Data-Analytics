@@ -20,6 +20,19 @@ out=$(echo -1 -2 -3 -4 -5 | tr ' ' '\n' | ./analytics)
 out=$(echo 1.1 2.2 3.3 4.4 5.5 | tr ' ' '\n' | ./analytics)
 [ "${out}" = "3.30 5.5 1.1 2.42 1.56" ] || ng "$LINENO"
 
+###引数による統計値の指定###
+#平均値
+out=$(seq 5 | ./analytics 平均値)
+[ "${out}" = "3.00" ] || ng "$LINENO"
+out=$(seq 5 | ./analytics avg)
+[ "${out}" = "3.00" ] || ng "$LINENO"
+#最大値と最小値
+out=$(seq 5 | ./analytics 最大値 min)
+[ "${out}" = "3.00" ] || ng "$LINENO"
+#分散と標準偏差
+out=$(seq 5 | ./analytics 分散 std)
+[ "${out}" = "3.00" ] || ng "$LINENO"
+
 ### 変な入力 ###
 out=$(echo あ| ./analytics)
 [ "$?" = 1 ]      || ng "$LINENO"
