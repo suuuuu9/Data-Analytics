@@ -2,7 +2,7 @@
 [![test](https://github.com/suuuuu9/Data-Analytics/actions/workflows/test.yml/badge.svg)](https://github.com/suuuuu9/Data-Analytics/actions/workflows/test.yml)
 ![License](https://img.shields.io/github/license/suuuuu9/Data-Analytics)
 
-簡単な統計値を計算するコードです。　
+簡単な統計値を計算するコードです。  
 標準入力から受け取った数値から、平均値、最大値、最小値、分散、標準偏差を出力します。このとき小数点以下は2桁に丸められます。
 
 ## ダウンロード方法
