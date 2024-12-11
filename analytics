@@ -38,9 +38,21 @@ for x in values:
 var = sum_sq / count
 std = math.sqrt(var)
 
+#出力
+results = []
+output_arg = sys.argv[1:]
+if not output_arg:
+    output_arg = ["avg", "max", "min", "var", "std"]
+if "平均値" in output_arg or "avg" in output_arg:
+    results.append('{:.2f}'.format(avg))
+if "最大値" in output_arg or "max" in output_arg:
+    results.append(maxvalue)
+if "最小値" in output_arg or "min" in output_arg:
+    results.append(minvalue)
+if "分散" in output_arg or "var" in output_arg:
+    results.append('{:.2f}'.format(var))
+if "標準偏差" in output_arg or "std" in output_arg:
+    results.append('{:.2f}'.format(std))
 
-print("平均値", '{:.2f}'.format(avg))
-print("最大値", maxvalue)
-print("最小値", minvalue)
-print("分散", '{:.2f}'.format(var))
-print("標準偏差", '{:.2f}'.format(std))
+
+print(*results)
