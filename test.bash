@@ -15,7 +15,7 @@ out=$(seq 5 | ./analytics)
 [ "${out}" = "3.00 5 1 2.00 1.41" ] || ng "$LINENO"
 #負の値
 out=$(echo -1 -2 -3 -4 -5 | tr ' ' '\n' | ./analytics)
-[ "${out}" = "-3.00 -1 -5  2.00 1.41" ] || ng "$LINENO"
+[ "${out}" = "-3.00 -1 -5 2.00 1.41" ] || ng "$LINENO"
 #小数点
 out=$(echo 1.1 2.2 3.3 4.4 5.5 | tr ' ' '\n' | ./analytics)
 [ "${out}" = "3.30 5.5 1.1 2.42 1.56" ] || ng "$LINENO"
