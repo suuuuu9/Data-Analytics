@@ -2,7 +2,7 @@
 [![test](https://github.com/suuuuu9/Data-Analytics/actions/workflows/test.yml/badge.svg)](https://github.com/suuuuu9/Data-Analytics/actions/workflows/test.yml)
 ![License](https://img.shields.io/github/license/suuuuu9/Data-Analytics)
 
-簡単な統計量を計算するコードです。
+簡単な統計値を計算するコードです。
 
 標準入力から受け取った数値から、平均値、最大値、最小値、分散、標準偏差を出力します。このとき小数点以下は2桁に丸められます。
 
@@ -12,24 +12,25 @@
 $ git clone https://github.com/suuuuu9/Data-Analytics.git
 ```
 
-クローン後ディレクトリに移動できます。
-```bash
-$ cd Data-Analytics
-```
-
 ## 使い方
 ディレクトリ```Data-Analytics```に移動後、標準入力で数値を入力し```./analytics```を実行します。
+平均値 最大値 最小値 分散 標準偏差 の順で出力されます。
+このとき統計値を引数で指定することで特定の統計値のみ出力することができます。
 
 ### 例
+**すべての統計値を出力**
 ```bash
-$ cd Data-Analytics
 $ seq 5 | ./analytics
-平均値 3.00
-最大値 5
-最小値 1
-分散 2.00
-標準偏差 1.41
+3.00 5 1 2.00 1.41
 ```
+**特定の統計値のみ出力**
+```bash
+$ seq 5 | ./analytics 平均値 標準偏差
+3.00 1.41
+```
+- 引数の間のスペースは半角にすること
+- 引数には日本語と英語の略語(avg max min var std)の両方を使用できる
+
 ### 入力形式
 縦並びの数値に対応
 
