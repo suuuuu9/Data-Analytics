@@ -12,7 +12,7 @@ $ git clone https://github.com/suuuuu9/Data-Analytics.git
 ```
 
 ## 使い方
-ディレクトリ```Data-Analytics```に移動後、標準入力で数値を入力し```./analytics```を実行します。　
+ディレクトリ```Data-Analytics```に移動後、標準入力で数値を入力し```./analytics```を実行します。  
 このとき統計値を引数で指定することで特定の統計値のみ出力することができます。
 
 ### 例
